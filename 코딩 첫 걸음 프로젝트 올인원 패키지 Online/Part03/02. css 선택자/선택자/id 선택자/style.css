@@ -1,0 +1,11 @@
+section {
+  padding: 32px;
+}
+
+/* 아래부터 */
+#intro {
+  background-color: yellowgreen;
+}
+#board {
+  background-color: pink;
+}
