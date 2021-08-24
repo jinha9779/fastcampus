@@ -1,0 +1,13 @@
+/* 행간 조절 */
+p {
+  line-height: 24px;
+}
+p {
+  line-height: 1.25;
+}
+p {
+  line-height: 1.25em;
+}
+p {
+  line-height: 125%;
+}
