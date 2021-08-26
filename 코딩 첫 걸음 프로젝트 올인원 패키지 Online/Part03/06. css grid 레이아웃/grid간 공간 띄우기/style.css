@@ -38,7 +38,7 @@
   grid-row: 4/5;
 }
 
-/* gird 공간 띄우기 */
+/* gird간 공간 띄우기 */
 .wrapper {
   gap: 10px;
 }
