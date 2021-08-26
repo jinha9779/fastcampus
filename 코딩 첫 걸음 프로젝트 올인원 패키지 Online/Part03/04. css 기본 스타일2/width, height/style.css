@@ -1,0 +1,44 @@
+/* 기본 세팅 */
+body {
+  padding: 0;
+  margin: 0;
+}
+.outer {
+  width: 80%;
+  height: 640px;
+  background-color: yellowgreen;
+}
+.inner {
+  background-color: green;
+}
+
+/* 아래부터 */
+/* 절대 크기 : 모니터상의 한 점 */
+.inner {
+  width: 400px;
+  height: 300px;
+}
+
+/* 상대 크기 : 바로 윗 부모의 크기에 비례 */
+.inner {
+  width: 50%;
+  height: 50%;
+}
+
+/* 상대 크기 : 뷰포트(html문서가 보여줄수있는 전체크기) 너비(vw)와 높이(vh)의 1/100 */
+.inner {
+  width: 50vw;
+  height: 50vh;
+}
+
+/* 상대 크기: 뷰포트 너비, 높이 중 긴(vmax) 쪽과 짧은(vmin) 쪽의 1/100 */
+.inner {
+  width: 50vmin;
+  height: 50vmin;
+}
+
+/* 절대적인 크기와 상대적인 크기 혼합 사용 */
+.inner {
+  width: calc(100% - 100px);
+  height: calc(50vh + 200px);
+}
