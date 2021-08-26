@@ -1,0 +1,26 @@
+body > div > * {
+  background-color: yellowgreen;
+  display: inline-block;
+  padding: 24px;
+}
+
+/** 아래부터 **/
+/* 요소를 화면에 두지 않음, 자리를 차지하지 않음 */
+/*body > div > span {
+  display: none;
+}*/
+
+/* 요소를 화면에 두되 보이지 않도록 함, 자리 차지 */
+body > div > span {
+  visibility: hidden;
+}
+
+/* 요소를 화면에 두고 보이도록 함, 자리차지 */
+body > div > span {
+  visibility: visible;
+}
+
+/* 요소를 화면에 두고 불투명도를 0으로 함, 자리 차지 */
+body > div > span {
+  opacity: 0;
+}
