@@ -1,0 +1,19 @@
+/* 기본 세팅 */
+div {
+  margin: 24px;
+  padding: 24px;
+}
+
+/** 아래부터 **/
+/* 기본 선과 크기와 색상 지정 */
+div {
+  border: 1px solid black;
+}
+
+/* 각 방향의 선 지정과 모양 크기 색상 각각 지정 */
+div {
+  border-top: 1px solid black;
+  border-right: 3px dashed green;
+  border-bottom: 9px dotted #ff6347;
+  border-left: 0;
+}
