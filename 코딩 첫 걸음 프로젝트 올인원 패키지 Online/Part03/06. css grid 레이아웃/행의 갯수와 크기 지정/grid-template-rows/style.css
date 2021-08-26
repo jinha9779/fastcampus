@@ -1,0 +1,32 @@
+/* 기본세팅 */
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  border: 2px solid black;
+}
+.wrapper > div {
+  background-color: yellow;
+}
+.wrapper > div:nth-child(even) {
+  background-color: yellowgreen;
+}
+
+/** 아래부터 **/
+.wrapper {
+  display: grid;
+}
+
+/* 절대값으로 행의 크기 지정 */
+.wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 200px 400px;
+}
+
+/* 상대값은 높이가 지정되어 있을 때 */
+.wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  height: 600px;
+  grid-template-rows: 1fr 2fr 3fr;
+}
