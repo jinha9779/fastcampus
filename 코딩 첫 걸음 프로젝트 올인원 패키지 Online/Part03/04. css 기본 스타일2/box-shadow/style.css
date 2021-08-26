@@ -1,0 +1,26 @@
+/* 기본 세팅 */
+body {
+  background-color: lightgray;
+}
+div {
+  background-color: white;
+  width: 320px;
+  height: 120px;
+  border-radius: 16px;
+}
+
+/** 아래부터 **/
+/* 그림자의 방향 크기 색상을 지정 */
+div {
+  box-shadow: 1px 1px black;
+}
+
+/* 세번째 픽셀은 그림자가 번지는 정도를 표현 */
+div {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 그림자의 색상을 여러가지로 적용 */
+div {
+  box-shadow: 0 0 4px red, 2px 2px 8px orange, 4px 2px 12px yellow;
+}
