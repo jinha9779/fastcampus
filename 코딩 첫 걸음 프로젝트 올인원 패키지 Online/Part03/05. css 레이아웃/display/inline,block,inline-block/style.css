@@ -1,0 +1,17 @@
+/* 기본 세팅 */
+body > div > * {
+  background-color: yellowgreen;
+}
+
+/** 아래부터 **/
+body > div > * {
+  display: inline;
+}
+
+body > div > * {
+  display: block;
+}
+
+body > div > * {
+  display: inline-block;
+}
