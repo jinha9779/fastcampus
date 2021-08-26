@@ -1,0 +1,43 @@
+/* 기본세팅 */
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  border: 2px solid black;
+}
+.wrapper > div {
+  background-color: yellow;
+}
+.wrapper > div:nth-child(even) {
+  background-color: yellowgreen;
+}
+
+/** 아래부터 **/
+.wrapper {
+  display: grid;
+}
+
+/* 절대값으로 */
+/* 픽셀의 갯수만큼 칸이 나뉨 */
+.wrapper {
+  grid-template-columns: 100px 200px 300px;
+}
+
+/* 비율 분할(fractions) */
+/* 포터뷰를 꽉채워 비율 분배 */
+.wrapper {
+  grid-template-columns: 1fr 2fr 3fr 4fr;
+}
+
+/* 혼합 사용 */
+/* 픽셀로 크기를 고정 시키고 나머지 부분을 비율 분배로 크기 조정 */
+.wrapper {
+  grid-template-columns: 200px 1fr 3fr;
+}
+
+/* 반복 지정 */
+/* n개만큼 n의 비율로 분배 */
+.wrapper {
+  grid-template-columns: repeat(3, 1fr);
+}
