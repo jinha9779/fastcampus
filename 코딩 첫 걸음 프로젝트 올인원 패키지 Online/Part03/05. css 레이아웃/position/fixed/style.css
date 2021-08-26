@@ -1,0 +1,28 @@
+.tall {
+  margin: 48px;
+  width: 200px;
+  height: 5000px;
+  background-color: yellowgreen;
+}
+
+/* 부모 요소가 아닌, viewport를 기준으로 배치 */
+/* 스크롤에 영향을 받지 않음 */
+/* 페이지 내 공간을 차지하지 않음 */
+.fixed1 {
+  position: fixed;
+  top: 24px;
+  left: 80px;
+  width: 300px;
+  height: 100px;
+  background-color: purple;
+}
+
+.fixed2 {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+}
