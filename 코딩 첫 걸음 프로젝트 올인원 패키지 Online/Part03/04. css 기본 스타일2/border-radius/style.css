@@ -1,0 +1,26 @@
+/* 기본 세팅 */
+div {
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+  color: white;
+  background-color: orange;
+  border: 2px solid darkorange;
+}
+
+/** 아래부터 **/
+/* 모든 모서리에 절대값 지정 */
+div {
+  border-radius: 8px;
+}
+
+/* 상대값 지정 */
+div {
+  border-radius: 50%;
+}
+
+/* 시계방향으로 각 모서리값 지정 */
+div {
+  border-radius: 24px 0 25% 50%;
+}
