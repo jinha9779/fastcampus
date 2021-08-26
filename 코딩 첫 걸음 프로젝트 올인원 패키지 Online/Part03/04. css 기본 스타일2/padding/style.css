@@ -1,0 +1,35 @@
+/* 기본 세팅 */
+body {
+  padding: 0;
+  margin: 0;
+}
+.outer {
+  background-color: yellowgreen;
+}
+.inner {
+  color: white;
+  background-color: green;
+}
+
+/** 아래부터 **/
+.outer {
+  padding: 24px;
+}
+
+/* 안쪽여백의 각 방향의 크기를 지정 */
+.outer {
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 0;
+  padding-left: 12px;
+}
+
+/* 위의 코드를 간소화 시킨 코드 */
+.outer {
+  padding: 24px 48px 0 12px;
+}
+
+/* 세로 크기와 가로 크기 지정 */
+.outer {
+  padding: 12px 48px;
+}
