@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body { padding: 8px 24px; }
+        table { width: 400px; }
+        td {
+        padding: 12px 16px;
+        border: 1px solid gray;
+
+        }
+        ul { list-style: none; }
+        button {
+        font-size: 1rem;
+        }
+    </style>
+</head>
+<body onload="showNotAssigneds();">
+
+    <h1></h1>
+
+    <button onclick="insertThisTime();">현 시각 기록</button>
+    <ul></ul>
+
+    <h1>팀 배정</h1>
+    <table>
+    <tr>
+        <td colspan="3" id="not_assigned"></td>
+    </tr>
+    <tr>
+        <td>1팀</td>
+        <td>2팀</td>
+        <td>3팀</td>
+    </tr>
+    <tr>
+        <td>
+        <button onclick="assignMemberToTeam(1)">배정</button>
+        <ul id="team_1"></ul>
+        </td>
+        <td>
+        <button onclick="assignMemberToTeam(2)">배정</button>
+        <ul id="team_2"></ul>
+        </td>
+        <td>
+        <button onclick="assignMemberToTeam(3)">배정</button>
+        <ul id="team_3"></ul>
+        </td>
+    </tr>
+    </table>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
