@@ -11,7 +11,7 @@ HTML 요소는 브라우저에 콘텐츠를 표시하는 방법을 알려준다.
 
 ### HTML 기본 문서
 
-> '''html
+'''html
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -21,8 +21,17 @@ HTML 요소는 브라우저에 콘텐츠를 표시하는 방법을 알려준다.
     <title>My test page</title>
   </head>
   <body>
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My test page</title>
+    </head>
+    <body>
     
+    </body>
+    </html>
   </body>
 </html>
 '''
->
