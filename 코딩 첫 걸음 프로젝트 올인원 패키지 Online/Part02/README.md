@@ -98,9 +98,25 @@ element = <opening tag>content</closing tag>
   > <p>이곳에 작성된 텍스트는 일반적인 문자 내용을 나타낸다.</p>
 
 - `링크` : 웹을 웹으로 만들어주는 아주 중요한 요소로 `<a></a>`로 정의 되며, a는 "anchor" 의 약자이다.
+
   #### 작성법
+
   ```html
-  <a href="#">현재 사이트 링크</a> <a href="#HTML">HTML로 이동</a>
+  <a href="#">현재 사이트 링크</a>
   ```
+
+  ```html
+  <a href="#HTML">HTML로 이동</a>
+  ```
+
+  ```html
+  <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
+  ```
+
   #### 결과물
-  > <a href="#">현재 사이트 링크</a> <a href="#HTML">HTML로 이동</a>
+
+  > <a href="#">현재 사이트 링크</a>
+
+  > <a href="#HTML">HTML로 이동</a>
+
+  > <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
