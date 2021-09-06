@@ -52,11 +52,35 @@ element = <opening tag>content</closing tag>
 
 - HTML 요소(element)는 시작 태그(opening tag), 일부 콘텐츠(content) 및 종료 태그(closing tag)로 정의 된다.
 
-  1. `opening tag` : 요소가 시작되는 곳, 또는 효과를 시작하는 곳임을 나타낸다.
-  2. `content` : 요소의 내용으로 위의 예제에서는 텍스트이다.
-  3. `closing tag` : opening tag 와 같지만, 요소의 이름 앞에 `/` 가 포함되며 요소의 끝을 나타낸다.
-  4. `element` : opening tag로 시작하여 content를 포함하고 closing tag로 끝나는 것을 요소라한다.
+  - `opening tag` : 요소가 시작되는 곳, 또는 효과를 시작하는 곳임을 나타낸다.
+  - `content` : 요소의 내용으로 위의 예제에서는 텍스트이다.
+  - `closing tag` : opening tag 와 같지만, 요소의 이름 앞에 `/` 가 포함되며 요소의 끝을 나타낸다.
+  - `element` : opening tag로 시작하여 content를 포함하고 closing tag로 끝나는 것을 요소라한다.
 
 - 요소는 속성도 가질 수 있는데, 다음과 같이 사용한다.
   - ex) `<p class="eidtor-note">content</p>`
   - `속성(attribute)` : class="editor-note"
+
+### 문자 나타내기
+
+- `제목` : HTML 제목은 내용의 특정 부분이 제목 또는 내용의 하위 제목임을 구체화 할 수 있게 해준다. `<h1>제목</h1>` 에서 `<h6>제목</h6>` 으로 정의된다.
+
+##### 작성법
+
+```html
+<h1>html문서에서 가장 중요한 제목을 표시하며 한번만 사용하는걸 권장함</h1>
+<h2>제목</h2>
+<h3>제목</h3>
+<h4>제목</h4>
+<h5>제목</h5>
+<h6>제목</h6>
+```
+
+##### 결과물
+
+> <h1>html문서에서 가장 중요한 제목을 표시하며 한번만 사용하는걸 권장함</h1>
+> <h2>제목</h2>
+> <h3>제목</h3>
+> <h4>제목</h4>
+> <h5>제목</h5>
+> <h6>제목</h6>
