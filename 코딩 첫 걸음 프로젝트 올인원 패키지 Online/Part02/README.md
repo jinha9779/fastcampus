@@ -51,10 +51,12 @@ element = <opening tag>content</closing tag>
 ```
 
 - HTML 요소(element)는 시작 태그(opening tag), 일부 콘텐츠(content) 및 종료 태그(closing tag)로 정의 된다.
+
   1. `opening tag` : 요소가 시작되는 곳, 또는 효과를 시작하는 곳임을 나타낸다.
-  1. `content` : 요소의 내용으로 위의 예제에서는 텍스트이다.
-  1. `closing tag` : opening tag 와 같지만, 요소의 이름 앞에 `/` 가 포함되며 요소의 끝을 나타낸다.
-  1. `element` : opening tag로 시작하여 content를 포함하고 closing tag로 끝나는 것을 요소라한다.
+  2. `content` : 요소의 내용으로 위의 예제에서는 텍스트이다.
+  3. `closing tag` : opening tag 와 같지만, 요소의 이름 앞에 `/` 가 포함되며 요소의 끝을 나타낸다.
+  4. `element` : opening tag로 시작하여 content를 포함하고 closing tag로 끝나는 것을 요소라한다.
+
 - 요소는 속성도 가질 수 있는데, 다음과 같이 사용한다.
   - ex) `<p class="eidtor-note">content</p>`
   - `속성(attribute)` : class="editor-note"
