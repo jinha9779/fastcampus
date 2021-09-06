@@ -139,13 +139,13 @@ element = <opening tag>content</closing tag>
     <li>두번째</li>
   </ol>
 
-  <ol start="2">
+  <ol type="1" start="2">
     시작 목록의 순번을 지정
     <li>첫번째</li>
     <li>두번째</li>
   </ol>
 
-  <ol reserved>
+  <ol type="1" reversed>
     항목을 역순으로 표시
     <li>첫번째</li>
     <li>두번째</li>
@@ -163,7 +163,7 @@ element = <opening tag>content</closing tag>
 
   > 순서 있는 목록
   >
-  > <ol>
+  > <ol type="1">
   >   기본값은 숫자이다.
   >   <li>첫번째</li>
   >   <li>두번째</li>
@@ -193,13 +193,13 @@ element = <opening tag>content</closing tag>
   >   <li>두번째</li>
   > </ol>
   > <br>
-  > <ol start="2">
+  > <ol type="1" start="2">
   >   시작 목록의 순번을 지정
   >   <li>첫번째</li>
   >   <li>두번째</li>
   > </ol>
   > <br>
-  > <ol reserved>
+  > <ol type="1" reversed>
   >   항목을 역순으로 표시
   >   <li>첫번째</li>
   >   <li>두번째</li>
