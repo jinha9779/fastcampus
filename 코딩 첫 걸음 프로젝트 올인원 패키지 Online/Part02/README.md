@@ -113,6 +113,16 @@ element = <opening tag>content</closing tag>
   <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
   ```
 
+  ```html
+  <a href="https://google.com" target="blank">새창에서 링크 열기</a>
+  ```
+
+  ```html
+  <a href="https://google.com" target="blank" title="구글로 이동"
+    >링크의 설명</a
+  >
+  ```
+
   #### 결과물
 
   > <a href="#">현재 사이트 링크</a>
@@ -120,3 +130,7 @@ element = <opening tag>content</closing tag>
   > <a href="#HTML">HTML로 이동</a>
 
   > <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
+
+  > <a href="https://google.com" target="blank">새창에서 링크 열기</a>
+
+  > <a href="https://google.com" target="blank" title="구글로 이동">링크의 설명</a>
