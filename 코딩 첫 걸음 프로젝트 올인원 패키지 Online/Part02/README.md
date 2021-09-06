@@ -97,6 +97,114 @@ element = <opening tag>content</closing tag>
 
   > <p>이곳에 작성된 텍스트는 일반적인 문자 내용을 나타낸다.</p>
 
+- `목록(리스트)` : HTML문서의 목록을 나타내는 요소로 순서가 있는 것과 순서가 없는 것이 있다.
+
+  #### 작성법
+
+  ```html
+  순서 없는 목록
+  <ul>
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ul>
+
+  순서 있는 목록
+  <ol>
+    기본값은 숫자이다.
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol type="a">
+    영어 소문자
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol type="A">
+    영어 대문자
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol type="i">
+    로마숫자 소문자
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol type="I">
+    로마숫자 대문자
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol start="2">
+    시작 목록의 순번을 지정
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+
+  <ol reserved>
+    항목을 역순으로 표시
+    <li>첫번째</li>
+    <li>두번째</li>
+  </ol>
+  ```
+
+  #### 결과물
+
+  > 순서 없는 목록
+  >
+  > <ul>
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ul>
+
+  > 순서 있는 목록
+  >
+  > <ol>
+  >   기본값은 숫자이다.
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol type="a">
+  >   알파벳 소문자
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol type="A">
+  >   알파벳 대문자
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol type="i">
+  >   로마숫자 소문자
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol type="I">
+  >   로마숫자 대문자
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol start="2">
+  >   시작 목록의 순번을 지정
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+  > <br>
+  > <ol reserved>
+  >   항목을 역순으로 표시
+  >   <li>첫번째</li>
+  >   <li>두번째</li>
+  > </ol>
+
 - `링크` : 웹을 웹으로 만들어주는 아주 중요한 요소로 `<a></a>`로 정의 되며, a는 "anchor" 의 약자이다.
 
   #### 작성법
@@ -114,23 +222,23 @@ element = <opening tag>content</closing tag>
   ```
 
   ```html
-  <a href="https://google.com" target="blank">새창에서 링크 열기</a>
+  <a href="https://google.com" target="_blank">새창에서 링크 열기</a>
   ```
 
   ```html
-  <a href="https://google.com" target="blank" title="구글로 이동"
+  <a href="https://google.com" target="_blank" title="구글로 이동"
     >링크의 설명</a
   >
   ```
 
   #### 결과물
 
-  <a href="#">현재 사이트 링크</a>
+  > <a href="#">현재 사이트 링크</a>
 
-  <a href="#HTML">HTML로 이동</a>
+  > <a href="#HTML">HTML로 이동</a>
 
-  <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
+  > <a href="https://google.com">현재 페이지에서 다른 사이트로 이동</a>
 
-  <a href="https://google.com" target="blank">새창에서 링크 열기</a>
+  > <a href="https://google.com" target="_blank">새창에서 링크 열기</a>
 
-  <a href="https://google.com" target="blank" title="구글로 이동">링크의 설명</a>
+  > <a href="https://google.com" target="_blank" title="구글로 이동">링크의 설명</a>
