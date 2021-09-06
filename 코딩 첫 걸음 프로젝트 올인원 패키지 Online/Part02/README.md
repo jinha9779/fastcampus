@@ -5,7 +5,7 @@
 - [MDN](https://developer.mozilla.org/ko/)
 - [w3schools](https://www.w3schools.com/default.asp)
 
-### HTML이란?
+## HTML이란?
 
 - HTML 은 프로그래밍 언어가 아니다.
 - HTML 은 Hyper Text Markup Language의 약자이다.
@@ -14,7 +14,7 @@
 - HTML 은 일련의 요소로 구성된다.
 - HTML 요소는 브라우저에 콘텐츠를 표시하는 방법을 알려준다.
 
-### HTML 기본 문서
+## HTML 기본 문서
 
 ```html
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 </html>
 ```
 
-### 문서 설명
+## 문서 설명
 
 - `<!DOCTYPE html>` : 오래전 HTML이 막 나왔을 때 doctype은 (자동오류 확인이나 다른 유용한 것을 의미하는) good HTML로 인정받기 위해 HTML 페이지가 따라야 할 일련의 규칙으로의 연결통로로써 작동하는 것을 의미하였지만, 최근에는 그런것에 신경쓰지 않으며 올바르게 작독하게 하기 위해 포함한다거나 HTML5 문서임을 정의한다고 인식된다.
 
@@ -44,7 +44,7 @@
 
 - `<body><body/>` : 문서의 본문을 정의하고, 등 호, 단락, 이미지, 하이퍼 링크, 테이블, 리스트, 모든 가시적 인 컨텐츠에 대한 컨테이너이다.
 
-### HTML 요소란?
+## HTML 요소란?
 
 ```html
 element = <opening tag>content</closing tag>
@@ -61,11 +61,11 @@ element = <opening tag>content</closing tag>
   - ex) `<p class="eidtor-note">content</p>`
   - `속성(attribute)` : class="editor-note"
 
-### 문자 나타내기
+## 문자 나타내기
 
 - `제목` : HTML 제목은 내용의 특정 부분이 제목 또는 내용의 하위 제목임을 구체화 할 수 있게 해준다. `<h1>제목</h1>` 에서 `<h6>제목</h6>` 으로 정의된다.
 
-  ##### 작성법
+  #### 작성법
 
   ```html
   <h1>html문서에서 가장 중요한 제목을 표시하며 한번만 사용하는걸 권장함</h1>
@@ -76,7 +76,7 @@ element = <opening tag>content</closing tag>
   <h6>제목</h6>
   ```
 
-  ##### 결과물
+  #### 결과물
 
   > <h1>html문서에서 가장 중요한 제목을 표시하며 한번만 사용하는걸 권장함</h1>
   > <h2>제목</h2>
@@ -84,3 +84,11 @@ element = <opening tag>content</closing tag>
   > <h4>제목</h4>
   > <h5>제목</h5>
   > <h6>제목</h6>
+
+- `단락(문단)` : 일반적인 문자 내용을 나타낼 때 사용되며, `<p></p>` 로 정의된다.
+  #### 작성법
+  ```html
+  <p>이곳에 작성된 텍스트는 일반적인 문자 내용을 나타낸다.</p>
+  ```
+  #### 결과물
+  > <p>이곳에 작성된 텍스트는 일반적인 문자 내용을 나타낸다.</p>
