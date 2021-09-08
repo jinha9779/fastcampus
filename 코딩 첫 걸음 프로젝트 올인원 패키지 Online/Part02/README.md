@@ -58,8 +58,71 @@ element = <opening tag>content</closing tag>
   - `element` : opening tag로 시작하여 content를 포함하고 closing tag로 끝나는 것을 요소라한다.
 
 - 요소는 속성도 가질 수 있는데, 다음과 같이 사용한다.
+
   - ex) `<p class="eidtor-note">content</p>`
   - `속성(attribute)` : class="editor-note"
+
+- `Empty elements` : 일부 HTML 요소에는 콘텐츠가 없는데 `<br>` 과 같은 요소를 <strong>빈 요소</strong>라 하며 closing tag가 없다.
+
+- `nesting elements` : 요소안에 다른 요소가 들어갈 수 있는데 그런 요소를 <strong>중첩 요소</strong>라 한다.
+
+  - ex1) `<p>HTML is <strong>very</strong> important</p>`
+  - ex2-1)
+
+  ```html
+  <table>
+    <tr>
+      <th>1행 1열</th>
+      <th>1행 2열</th>
+      <th>1행 3열</th>
+    </tr>
+    <tr>
+      <th>2행 1열</th>
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+    </tr>
+    <tr>
+      <th>3행 1열</th>
+      <td>3행 2열</td>
+      <td>3행 3열</td>
+    </tr>
+  </table>
+  ```
+
+  - ex2-2)
+    > <table>
+    >  <tr>
+    >    <th>1행 1열</th>
+    >    <th>1행 2열</th>
+    >    <th>1행 3열</th>
+    >  </tr>
+    >  <tr>
+    >    <th>2행 1열</th>
+    >    <td>2행 2열</td>
+    >    <td>2행 3열</td>
+    >  </tr>
+    >  <tr>
+    >    <th>3행 1열</th>
+    >    <td>3행 2열</td>
+    >    <td>3행 3열</td>
+    >  </tr>
+    > </table>
+
+- inline elements vs block level elements
+  - `inline elements` : 인라인 요소는 항상 블록 레벨 요소내에 포함되며, 새로운 줄을 만들지 않는 문장이나, 단어를 구성하는 요소이다.
+    - ex) `<a href="#"><em>인라인 요소</em></a>`
+  - `block level elements` : 블록 레벨 요소는 웹페이지 상에 블록을 만드는 요소로, 요소간 새로운 줄을 만들며, 인라인 요소에 중첩될 수 없으나 다른 블록 레벨 요소에 중첩될 수 있다.
+    - ex)
+    ```html
+    <div>
+      시작
+      <p>첫번째</p>
+      <p>두번째</p>
+      <p>세번째</p>
+      끝
+    </div>
+    ```
+    > <div>시작<p>첫번째</p><p>두번째</p><p>세번째</p>끝</div>
 
 ## 문자 나타내기
 
