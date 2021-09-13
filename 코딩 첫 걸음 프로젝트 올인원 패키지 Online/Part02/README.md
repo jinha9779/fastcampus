@@ -321,4 +321,4 @@ element = <opening tag>content</closing tag>
 />
 ```
 
-> <img src="https://github.com/jinha9779/fastcampus/tree/main/%EC%BD%94%EB%94%A9%20%EC%B2%AB%20%EA%B1%B8%EC%9D%8C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%98%AC%EC%9D%B8%EC%9B%90%20%ED%8C%A8%ED%82%A4%EC%A7%80%20Online/Part02/lake.jpg" alt="html의 이미지 사용 예시" width="104" height="142">
+<img src="https://github.com/jinha9779/fastcampus/tree/main/%EC%BD%94%EB%94%A9%20%EC%B2%AB%20%EA%B1%B8%EC%9D%8C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%98%AC%EC%9D%B8%EC%9B%90%20%ED%8C%A8%ED%82%A4%EC%A7%80%20Online/Part02/lake.jpg" alt="html의 이미지 사용 예시" width="104" height="142">
