@@ -318,11 +318,11 @@ element = <opening tag>content</closing tag>
   <img
     src="https://github.com/jinha9779/fastcampus/tree/main/코딩 첫 걸음 프로젝트 올인원 패키지 Online/Part02/lake.jpg"
     alt="html의 이미지 사용 예시"
-    width="104"
-    height="142"
+    width="300px"
+    height="250px"
   />
   ```
 
   #### 결과물
 
-  <img src="https://github.com/jinha9779/fastcampus/tree/main/코딩 첫 걸음 프로젝트 올인원 패키지 Online/Part02/lake.jpg" alt="html의 이미지 사용 예시" width="104" height="142">
+  <img src="https://github.com/jinha9779/fastcampus/tree/main/코딩 첫 걸음 프로젝트 올인원 패키지 Online/Part02/lake.jpg" alt="html의 이미지 사용 예시" width="300px" height="250px">
