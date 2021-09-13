@@ -307,3 +307,15 @@ element = <opening tag>content</closing tag>
   > <a href="https://google.com" target="_blank">새창에서 링크 열기</a>
 
   > <a href="https://google.com" target="_blank" title="구글로 이동">링크의 설명</a>
+
+## 이미지
+
+- HTML 이미지는 `<img>` 태그로 정의된다.
+
+```html
+<img
+  src="https://github.com/jinha9779/fastcampus/tree/main/%EC%BD%94%EB%94%A9%20%EC%B2%AB%20%EA%B1%B8%EC%9D%8C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%98%AC%EC%9D%B8%EC%9B%90%20%ED%8C%A8%ED%82%A4%EC%A7%80%20Online/Part02/lake.jpg"
+/>
+```
+
+> <img src="https://github.com/jinha9779/fastcampus/tree/main/%EC%BD%94%EB%94%A9%20%EC%B2%AB%20%EA%B1%B8%EC%9D%8C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%98%AC%EC%9D%B8%EC%9B%90%20%ED%8C%A8%ED%82%A4%EC%A7%80%20Online/Part02/lake.jpg">
