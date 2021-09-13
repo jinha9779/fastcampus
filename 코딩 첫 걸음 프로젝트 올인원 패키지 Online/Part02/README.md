@@ -325,4 +325,4 @@ element = <opening tag>content</closing tag>
 
   #### 결과물
 
-  <img src="https://github.com/jinha9779/fastcampus/..Part02/lake.jpg" alt="html의 이미지 사용 예시" width="300px" height="250px">
+  <img src="https://github.com/jinha9779/fastcampus/Part02/lake.jpg" alt="html의 이미지 사용 예시" width="300px" height="250px">
