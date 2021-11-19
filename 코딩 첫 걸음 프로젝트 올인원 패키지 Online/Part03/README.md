@@ -32,21 +32,4 @@
 
   #### 결과물
 
-  <!DOCTYPE html>
-  <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>css test</title>
-  </head>
-  <body>
-    <h1>페이지의 제목을 큰 파란색 텍스트로 표시</h1>
-    <style>
-        h1 {
-            color: blue;
-            font-size: 5em;
-        }
-    </style>
-  </body>
-  </html>
+  > <h1 style="color:blue; font-size:5em;">페이지의 제목을 큰 파란색 텍스트로 표시</h1>
