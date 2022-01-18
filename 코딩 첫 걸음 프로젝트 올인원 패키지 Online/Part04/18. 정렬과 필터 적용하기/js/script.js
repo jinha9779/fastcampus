@@ -8,41 +8,6 @@ function setMenu(_menu) {
   document.querySelector("main").className = _menu;
 }
 
-var sorts = {
-  recent: function (a, b) { return (a.idx > b.idx) ? -1 : 1 },
-  like: function (a, b) { return (a.likes > b.likes) ? -1 : 1 }
-}
-var sort = sorts.recent;
-
-var filters = {
-  all: function (it) { return true; },
-  mine: function (it) { return it.user_id === my_info.id; },
-  like: function (it) { return my_info.like.indexOf(it.idx) > -1; },
-  follow: function (it) { return my_info.follow.indexOf(it.user_id) > -1; }
-}
-var filter = filters.all;
-
-function setSort (_sort) {
-  var sortButtons = document.querySelectorAll("#sorts li");
-  sortButtons.forEach(function (sortButton) {
-    sortButton.classList.remove('on');
-  })
-  document.querySelector("#sorts ." + _sort).classList.add("on");
-
-  sort = sorts[_sort];
-  showPhotos();
-}
-
-function setFilter(_filter) {
-  var filterButtons = document.querySelectorAll("#filters li");
-  filterButtons.forEach(function (filterButton) {
-    filterButton.classList.remove('on');
-  });
-  document.querySelector("#filters ." + _filter).classList.add("on");
-  filter = filters[_filter];
-  showPhotos();
-}
-
 // 사진들 새로 보여주기
 function showPhotos () {
 
@@ -56,10 +21,7 @@ function showPhotos () {
   // 갤러리 div 선택
   var gallery = document.querySelector("#gallery");
 
-  var filtered = photos.filter(filter);
-  filtered.sort(sort);
-
-  filtered.forEach(function (photo) {
+  photos.forEach(function (photo) {
     var photoNode = document.querySelector("article.hidden").cloneNode(true);
     photoNode.classList.remove("hidden");
     photoNode.querySelector(".author").innerHTML = photo.user_name;
