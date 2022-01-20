@@ -8,6 +8,48 @@ function setMenu(_menu) {
   document.querySelector("main").className = _menu;
 }
 
+// 정렬 방식
+var sorts = {
+  recent: function (a, b) { return (a.idx > b.idx) ? -1 : 1 },
+  like: function (a, b) { return (a.likes > b.likes) ? -1 : 1 },
+}
+
+// 현재 선택된 정렬
+var sort = sorts.recent;
+
+// 정렬 설정 & 적용
+function setSort(_sort) {
+  var sortButtons = document.querySelectorAll("#sorts li");
+  sortButtons.forEach(function (sortButton) {
+    sortButton.classList.remove('on');
+  })
+  document.querySelector("#sorts ." + _sort).classList.add("on");
+  sort = sorts[_sort];
+  showPhotos();
+}
+
+// 필터 방식
+var filters = {
+  all: function (it) { return true; },
+  mine: function (it) { return it.user_id === my_info.id; },
+  like: function (it) { return my_info.like.indexOf(it.idx) > -1; },
+  follow: function (it) { return my_info.follow.indexOf(it.user_id) > -1; },
+}
+
+// 현재 선택된 필터
+var filter = filters.all;
+
+// 필터 설정 & 적용
+function setFilter(_filter) {
+  var filterButtons = document.querySelectorAll("#filters li");
+  filterButtons.forEach(function (filterButton) {
+    filterButton.classList.remove('on');
+  });
+  document.querySelector("#filters ." + _filter).classList.add("on");
+  filter = filters[_filter];
+  showPhotos();
+}
+
 // 사진들 새로 보여주기
 function showPhotos () {
 
@@ -21,7 +63,12 @@ function showPhotos () {
   // 갤러리 div 선택
   var gallery = document.querySelector("#gallery");
 
-  photos.forEach(function (photo) {
+  // 필터 & 정렬 적용
+  var filtered = photos.filter(filter);
+  filtered.sort(sort);
+
+  // 필터된 사진들 화면에 나타내기
+  filtered.forEach(function (photo) {
     var photoNode = document.querySelector("article.hidden").cloneNode(true);
     photoNode.classList.remove("hidden");
     photoNode.querySelector(".author").innerHTML = photo.user_name;
@@ -35,7 +82,7 @@ function showPhotos () {
     if (my_info.like.indexOf(photo.idx) > -1) {
       photoNode.querySelector(".like").classList.add("on");
     }
-    gallery.append(photoNode);
+    gallery.appendChild(photoNode);
   })
 }
 

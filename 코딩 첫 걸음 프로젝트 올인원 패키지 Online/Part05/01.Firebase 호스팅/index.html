@@ -27,19 +27,19 @@
       <div class="dep _upload option-title">사진 올리기</div>
       <div class="dep _myinfo option-title">내 정보</div>
       <ul id="sorts" class="dep _gallery">
-        <li class="recent on">최신순 보기</li>
-        <li class="like">좋아요 순 보기</li>
+        <li class="recent on" onclick="setSort('recent')">최신순 보기</li>
+        <li class="like" onclick="setSort('like')">좋아요 순 보기</li>
       </ul>
       <ul id="filters" class="dep _gallery">
-        <li class="all on">전체 사진</li>
-        <li class="mine">내 사진 사진</li>
-        <li class="like">좋아요 한 사진</li>
-        <li class="follow">팔로우 회원 사진</li>
+        <li class="all on" onclick="setFilter('all')">전체 사진</li>
+        <li class="mine" onclick="setFilter('mine')">내 사진 사진</li>
+        <li class="like" onclick="setFilter('like')">좋아요 한 사진</li>
+        <li class="follow" onclick="setFilter('follow')">팔로우 회원 사진</li>
       </ul>
     </aside>
     <div class="content">
 
-      <section id="intro" class="dep _gallery ">
+      <section id="intro" class="dep _gallery">
         <h1>패스트캠퍼스 포트폴리오입니다.</h1>
         <p>
           수많은 이용자들이 공유하는 멋진 사진들을 구경하고<br>
@@ -47,7 +47,7 @@
         </p>
       </section>
 
-      <section id="gallery" class="dep _gallery ">
+      <section id="gallery" class="dep _gallery">
         <article class="hidden">
           <div class="photo"></div>
           <div class="info">
@@ -133,29 +133,4 @@
   </footer>
   
 </body>
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCcBpfCObgoV-bwHiyL5b84pDHP85Vw1z4",
-    authDomain: "fastcam-44648.firebaseapp.com",
-    projectId: "fastcam-44648",
-    storageBucket: "fastcam-44648.appspot.com",
-    messagingSenderId: "722257347400",
-    appId: "1:722257347400:web:aff80d104e6bdd28c1297d",
-    measurementId: "G-V62W6DHQ76"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
 </html>
