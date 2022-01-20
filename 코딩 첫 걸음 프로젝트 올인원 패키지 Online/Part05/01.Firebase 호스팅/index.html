@@ -131,6 +131,28 @@
       <li><a href="#">고객센터</a></li>
     </ul>
   </footer>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
   
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyACtuXu7u8TL_Y-ohYnbtUwEN0z38yKBek",
+      authDomain: "fastcampus-fad99.firebaseapp.com",
+      projectId: "fastcampus-fad99",
+      storageBucket: "fastcampus-fad99.appspot.com",
+      messagingSenderId: "749859376522",
+      appId: "1:749859376522:web:c6a5269b33d8fa14cfcc73",
+      measurementId: "G-TWZ97JKMKV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
