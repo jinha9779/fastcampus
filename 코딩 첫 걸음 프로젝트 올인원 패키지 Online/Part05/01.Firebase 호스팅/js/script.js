@@ -113,7 +113,7 @@ function toggleLike(idx) {
 // 사진올리기의 사진설명 길이 표시
 function setDescLength () {
   document.querySelector(".descLength").innerHTML =
-   document.querySelector("input.description").value.length + "/20";
+  document.querySelector("input.description").value.length + "/20";
 }
 
 function updateMyInfo () {
